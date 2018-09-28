@@ -1,6 +1,6 @@
 <template>
   <input type="text" :placeholder="placeholder" ref="input"
-    :value="value" @focus="$emit('focus')" @blur="$emit('blur')"/>
+    :value="value" @focus="$emit('focus')" @blur="$emit('blur')" @input="$emit('input', $event)"/>
 </template>
 
 <script>
